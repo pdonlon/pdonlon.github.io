@@ -1,5 +1,8 @@
 var p = 0;
+<<<<<<< HEAD
 var speed = 200;
+=======
+>>>>>>> de691e1938e4669a80cf76a567ca44f0c21efe50
 
 function moveit() {
     p += 0.05;
@@ -21,27 +24,43 @@ function moveit() {
     $('#friends').animate({
             top: newTop,
             left: newLeft,
+<<<<<<< HEAD
         }, speed, function() {
+=======
+        }, 100, function() {
+>>>>>>> de691e1938e4669a80cf76a567ca44f0c21efe50
             moveit()
                 });
     $('#friends2').animate({
         top: newTop1,
         left: newLeft1,
+<<<<<<< HEAD
     },speed, function() {
+=======
+    },100, function() {
+>>>>>>> de691e1938e4669a80cf76a567ca44f0c21efe50
         moveit();
     });
     
     $('#friends3').animate({
                            top: newTop2,
                            left: newLeft2,
+<<<<<<< HEAD
                            },speed, function() {
+=======
+                           },100, function() {
+>>>>>>> de691e1938e4669a80cf76a567ca44f0c21efe50
                            moveit();
                            });
     
     $('#friends4').animate({
                            top: newTop3,
                            left: newLeft3,
+<<<<<<< HEAD
                            },speed, function() {
+=======
+                           },100, function() {
+>>>>>>> de691e1938e4669a80cf76a567ca44f0c21efe50
                            moveit();
                            });
  }

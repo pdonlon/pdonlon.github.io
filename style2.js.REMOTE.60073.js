@@ -1,5 +1,4 @@
 var p = 0;
-var speed = 200;
 
 function moveit() {
     p += 0.05;
@@ -21,27 +20,27 @@ function moveit() {
     $('#friends').animate({
             top: newTop,
             left: newLeft,
-        }, speed, function() {
+        }, 100, function() {
             moveit()
                 });
     $('#friends2').animate({
         top: newTop1,
         left: newLeft1,
-    },speed, function() {
+    },100, function() {
         moveit();
     });
     
     $('#friends3').animate({
                            top: newTop2,
                            left: newLeft2,
-                           },speed, function() {
+                           },100, function() {
                            moveit();
                            });
     
     $('#friends4').animate({
                            top: newTop3,
                            left: newLeft3,
-                           },speed, function() {
+                           },100, function() {
                            moveit();
                            });
  }
