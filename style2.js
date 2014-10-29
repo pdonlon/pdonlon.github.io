@@ -68,6 +68,7 @@ $('.friends img').on("mouseout", function() {
 
 
 $(document).ready(function() {
-                  $('#frienddiv').delay(800).animate({opacity : 1},  600 );
+                  $('#logo').delay(800).animate({opacity : 1},  600 );
+                  $('#frienddiv').delay(1800).animate({opacity : 1},  2000 );
     moveit();
 });
