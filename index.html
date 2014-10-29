@@ -13,7 +13,8 @@
 
                             <link href="carousel.css" rel="stylesheet">
 <style>
-    .friends { position:fixed }</style>
+    .friends { position:fixed;}
+    #frienddiv { opacity: 0; } </style>
                                 </head>
     <!-- NAVBAR
      ================================================== -->
@@ -55,8 +56,9 @@
         <!-- Marketing messaging and featurettes
          ================================================== -->
         <!-- Wrap the rest of the page in another container to center all the content. -->
-        
-        <div class="container marketing" style="width:100%">
+        <div style="width: 100px; height: 100px; position: absolute; top:0; bottom: 0; left: 0; right: 0;margin: auto;" id="logo"><img style="margin-left:-110px"  src="logo.png"> </div>
+
+        <div class="container marketing" id="frienddiv" style="width:100%">
             
             <!-- Three columns of text below the carousel -->
             
@@ -64,7 +66,6 @@
             <!-- START THE FEATURETTES -->
             
             
-            <div style="width: 100px; height: 100px; position: absolute; top:0; bottom: 0; left: 0; right: 0;margin: auto;" id="logo"><img style="margin-left:-110px"  src="logo.png"> </div>
     
         <div class="friends" id="friends">
             Minesweeper<br><a href="MinesFeatures.html"><img id="earth" alt="" src="mines.png" width="80" height="80"></a></div>
