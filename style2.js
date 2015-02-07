@@ -49,7 +49,11 @@
 
         function load(page) {
            if (location.hash!="" && location.hash!="#")
+           {
                 $.ajax(page+".html").done(render).fail(error);   
+                $('.friends').fadeOut(300);
+               $('#logo').fadeOut(300);
+           }
         }
 
         $(function(){
@@ -69,8 +73,6 @@
 
         function falldown(id) {
             //$('.friends:not(#'+id+')').animate({top: 1000}, 500, function() {});
-            $('.friends').fadeOut(300);
-            $('#logo').fadeOut(300);
             //$("#"+id).animate({width: "400px", height: "400px"}, 1000);
             
         }
