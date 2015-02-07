@@ -53,8 +53,9 @@
 
         $(function(){
             $(window).hashchange( function(){
-                load(location.href.split('#')[0]);
+                load(location.hash.split('#')[1]);
             });
+            $(window).hashchange();
         });
 
         function render(data) {
