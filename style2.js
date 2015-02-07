@@ -47,8 +47,9 @@
                                    });
          }
 
-        function load(page) {            
-            $.ajax(page+".html").done(render).fail(error);   
+        function load(page) {  
+           if (location.hash!="" && location.hash!="#")
+                $.ajax(page+".html").done(render).fail(error);   
         }
 
         $(function(){
@@ -99,7 +100,10 @@
                             });
 
         $(document).ready(function() {
+            if (location.hash == "" || location.hash =="#")  
+            {
                           $('#logo').delay(800).animate({opacity : 1},  600 );
                           $('#frienddiv').delay(1800).animate({opacity : 1},  2000 );
+            }
             moveit();
         });
