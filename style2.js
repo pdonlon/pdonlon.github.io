@@ -47,16 +47,41 @@ function moveit() {
                            });
  }
 
+function load(page) {
+    $.ajax(page+".html").done(render).fail(error);   
+}
+
+function render(data) {
+    $("#main").hide().fadeIn(500).html(data);
+}
+
+function error() {
+    alert("Error, that page does not exist.");
+}
+
+function falldown(id) {
+    $('.friends:not(#'+id+')').animate({top: 1000}, 500, function() {});
+}
+
+function floatup (id) {
+ //$('#'+id+'me').animate({marginTop: 10, marginLeft: 100, padding: 0, position:    "relative", top: 0, left:0}, 500);
+    //$('#logo').fadeOut(300);
+}
+
 function startit() {
     moving = true;
     moveit();
-    console.log("HEY");
 }
 
 function stopit() {
     moving = false;
     $('.friends img').stop(true, false);
 }
+
+$('.friends').click(function() {
+    falldown($(this).attr("id"));
+    floatup($(this).attr("id"));
+});
 
 $('.friends img').hover(function() {
     stopit();
