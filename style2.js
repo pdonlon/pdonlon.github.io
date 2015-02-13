@@ -1,6 +1,7 @@
         var p = 0;
         var speed = 200;
         var moving = true;
+        var previousState;
 
         function moveit() {
             p += 0.05;
@@ -48,12 +49,27 @@
          }
 
         function load(page) {
-           if (location.hash!="" && location.hash!="#")
-           {
-                $.ajax(page+".html").done(render).fail(error);   
+            if(!page)
+                return;
+            var res = page.split("_");
+            
+            if (location.hash!="" && location.hash!="#")
+            {
+                console.log(previousState);
+                //console.log(res[0]);
+                if(res.length == 1 || previousState != res[0])
+                {
+                    previousState = res[0];
+                    $.ajax(res[0]+".html").done(render).fail(error);
+                }
+                else
+                {
+                    previousState = res[0];
+                    $.ajax(res[1]+".html").done(subrender).fail(error);
+                }
                 $('.friends').fadeOut(300);
-               $('#logo').fadeOut(300);
-           }
+                $('#logo').fadeOut(300);
+            }
         }
 
         $(function(){
@@ -63,8 +79,18 @@
             $(window).hashchange();
         });
 
-        function render(data) {
+        function render(data) {                
             $("#main").hide().fadeIn(500).html(data);
+            stopit();
+
+            console.log(moving);
+            
+            if($("#main2").length == 1)
+                load(location.hash.split('#')[1]);
+        }
+
+        function subrender(data) {
+            $("#main2").hide().fadeIn(500).html(data);
         }
 
         function error() {

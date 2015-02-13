@@ -1,4 +1,4 @@
-/* GLOBAL STYLES
+h/* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
@@ -22,8 +22,25 @@ body {
     margin-top: -20px;
 }
 
+h2.subnavbar
+{
+    display: inline;
+}
+
+.apps
+{
+    margin-left:  100px;
+    margin-right: 100px;
+}
+
+.badminton
+{
+    margin-left:  100px;
+    margin-right: 100px;
+}
 
 
+/*
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
