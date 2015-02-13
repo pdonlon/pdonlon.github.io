@@ -51,7 +51,7 @@
         function load(page) {
             if(!page)
                 return;
-            var res = page.split("_");
+            var res = page.split("/");
             
             if (location.hash!="" && location.hash!="#")
             {
