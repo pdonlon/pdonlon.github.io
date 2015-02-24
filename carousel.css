@@ -22,6 +22,18 @@ body {
     margin-top: -20px;
 }
 
+.move-right-a-lot
+{
+    margin-right: -130px; 
+    margin-left: 110px;
+}
+
+.move-right-a-little
+{
+    margin-right: -80px; 
+    margin-left: 50px;
+}
+
 h2.subnavbar
 {
     display: inline;
@@ -38,7 +50,6 @@ h2.subnavbar
     margin-left:  100px;
     margin-right: 100px;
 }
-
 
 /*
 /* CUSTOMIZE THE NAVBAR
