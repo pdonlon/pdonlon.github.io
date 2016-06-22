@@ -1,0 +1,5 @@
+File tempFile = File.createTempFile("version","txt");
+
+new DefaultHttpClient().execute(new HttpGet(your_url_here-this_is_a_string)).getEntity().writeTo(
+
+new FileOutputStream(tempFile);
