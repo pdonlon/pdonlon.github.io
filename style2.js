@@ -60,12 +60,12 @@
                 if(res.length == 1 || previousState != res[0])
                 {
                     previousState = res[0];
-                    $.ajax(res[0]+".html").done(render).fail(error);
+                    $.ajax("pages/"+res[0]+".html").done(render).fail(error);
                 }
                 else
                 {
                     previousState = res[0];
-                    $.ajax(res[1]+".html").done(subrender).fail(error);
+                    $.ajax("pages/"+res[1]+".html").done(subrender).fail(error);
                 }
                 $('.friends').fadeOut(300);
                 $('#logo').fadeOut(300);
