@@ -67,9 +67,11 @@
 
           <li class="contact-item">
 
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
+            <a href="mailto:me@philipdonlon.com">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+            </a>
 
             <div class="contact-info">
               <p class="contact-title">Email</p>
@@ -81,9 +83,11 @@
 
           <li class="contact-item">
 
-            <div class="icon-box">
-              <ion-icon name="logo-github"></ion-icon>
-            </div>
+            <a href="https://github.com/pdonlon" target="_blank">
+              <div class="icon-box">
+                <ion-icon name="logo-github"></ion-icon>
+              </div>
+            </a>
 
             <div class="contact-info">
               <p class="contact-title">Github</p>
@@ -94,15 +98,29 @@
           </li>
 
           <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </div>
+            <a href="https://philipdonlon.com/linkedin" target="_blank">
+              <div class="icon-box">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </div>
+            </a>
 
             <div class="contact-info">
               <p class="contact-title">LinkedIn</p>
+              <a href="https://philipdonlon.com/linkedin" target="_blank" class="contact-link">philipdonlon.com/linkedin</a>
+            </div>
 
-              <a href="https://philipdonlon.com/linkedin" class="contact-link">philipdonlon.com/linkedin</a>
+          </li>
+
+          <li class="contact-item">
+            <a href="https://www.tournamentsoftware.com/player-profile/B8AE5884-E0B0-45DD-AF27-AB5C6B67C704" target="_blank">
+              <div class="icon-box">
+                <ion-icon name="medal-outline"></ion-icon>
+              </div>
+            </a>
+
+            <div class="contact-info">
+              <p class="contact-title">Badminton</p>
+              <a href="https://www.tournamentsoftware.com/player-profile/B8AE5884-E0B0-45DD-AF27-AB5C6B67C704" target="_blank" class="contact-link">Tournament Software</a>
             </div>
 
           </li>
@@ -178,7 +196,7 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button id="portfolio" class="navbar-link" data-nav-link>Portfolio</button>
           </li>
 
           <li class="navbar-item">
@@ -211,7 +229,7 @@
 
           <p>
             I love working in fast pace collaborative enviroments and am very passionate about my work. As an engineer, I deeply appreciate and thrive in 
-            untangling the minutiae of complex problems, relishing the small details that lead to impactful solutions. Simultaneously, as a leader, 
+            untangling complex problems, relishing the small details that lead to impactful solutions. Simultaneously, as a leader, 
             I revel in the satisfaction of orchestrating these intricate parts and overseeing their harmony, creating the bigger picture. 
             This ability to zoom in and out of scenarios is one I consider a strength, capable of both microscopic inspection and macroscopic vision. 
           </p>
@@ -229,12 +247,12 @@
           <ul class="service-list">
 
             <li class="service-item">
-
+              <a href="https://durianapps.com" target="_blank">
               <div class="service-icon-box">
                 <img src="./assets/images/icon-app.svg
                 " alt="design icon" width="40">
               </div>
-
+              </a>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Mobile development</h4>
 
@@ -246,26 +264,27 @@
             </li>
 
             <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
+              <a href="javascript:document.getElementById('portfolio').click();javascript:document.getElementById('web_development').click();">
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                </div>
+              </a>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Web development</h4>
 
                 <p class="service-item-text">
-                  High-quality development of sites at the professional level.
+                  I apply my proficiency in front-end development to create superior, user-centric designs, positioning myself as an indispensable asset in the rapidly evolving digital landscape.  
                 </p>
               </div>
 
             </li>
 
             <li class="service-item">
-
+              <a href="javascript:document.getElementById('portfolio').click();">
               <div class="service-icon-box">
                 <img src="./assets/images/icon-design.svg" alt="mobile app icon" width="40">
               </div>
+            </a>
 
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Personal Projects</h4>
@@ -279,10 +298,11 @@
             </li>
 
             <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/badminton.png" alt="camera icon" width="40">
-              </div>
+              <a href="https://philipdonlon.com/old.html#Badminton/Achievements" target="_blank">
+                <div class="service-icon-box">
+                  <img src="./assets/images/badminton.png" alt="camera icon" width="40">
+                </div>
+              </a>
 
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Badminton</h4>
@@ -398,7 +418,7 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="School-outline"></ion-icon>
             </div>
 
             <h3 class="h3">Education</h3>
@@ -426,7 +446,7 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="desktop-outline"></ion-icon>
             </div>
 
             <h3 class="h3">Experience</h3>
@@ -489,7 +509,7 @@
 
           <h3 class="h3 skills-title">My skills</h3>
 
-          <ul class="skills-list content-card">
+          <ul class="skills-list content-card" style="cursor:default">
 
             <li class="skills-item">
 
@@ -508,11 +528,11 @@
 
               <div class="title-wrapper">
                 <h5 class="h5">Leadership</h5>
-                <data value="70">70%</data>
+                <data value="80">80%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
+                <div class="skill-progress-fill" style="width: 80%;"></div>
               </div>
 
             </li>
@@ -521,11 +541,11 @@
 
               <div class="title-wrapper">
                 <h5 class="h5">User Interface</h5>
-                <data value="90">90%</data>
+                <data value="70">70%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
+                <div class="skill-progress-fill" style="width: 70%;"></div>
               </div>
 
             </li>
@@ -580,7 +600,7 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+              <button id="web_development" data-filter-btn>Web development</button>
             </li>
 
           </ul>
@@ -704,7 +724,7 @@
                   <img src="./assets/images/project-5.png" alt="chess" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Chess.</h3>
+                <h3 class="project-title">Chess</h3>
 
                 <p class="project-category">Applications</p>
 
